@@ -1,0 +1,4 @@
+#Fri Jan 25 12:34:40 IST 2019
+base.0=D\:\\SampleProject\\dbulao2\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

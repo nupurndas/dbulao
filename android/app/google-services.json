@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "450067797788",
+    "firebase_url": "https://seismic-lexicon-225310.firebaseio.com",
+    "project_id": "seismic-lexicon-225310",
+    "storage_bucket": "seismic-lexicon-225310.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450067797788:android:8d425ebe17f979ee",
+        "android_client_info": {
+          "package_name": "com.dbulao1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450067797788-hkso0fb5egar3qamn6soo5mr7bosug5d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dbulao1",
+            "certificate_hash": "f0687e624689e242660c5aee3ff952f1bf323de8"
+          }
+        },
+        {
+          "client_id": "450067797788-i4mgtm3nmb3se0097n7d706errig8dol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOTFP6U9YqMPTdfRqQ4hSkPmRyuCy-Tsk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450067797788-i4mgtm3nmb3se0097n7d706errig8dol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config=":react-native-google-signin"><source path="D:\SampleProject\dbulao2\node_modules\react-native-google-signin\android\build\intermediates\packagedAssets\debug"/></dataSet><dataSet config="main"><source path="D:\SampleProject\dbulao2\android\app\src\main\assets"/><source path="D:\SampleProject\dbulao2\android\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\SampleProject\dbulao2\android\app\src\debug\assets"/></dataSet></merger>
