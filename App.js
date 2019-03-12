@@ -88,14 +88,19 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.instructions}>Doctor Bulao</Text>
+        <View style={styles.header}>        
         {this.state.isAlreadyLoggedin ? 
         (
-          <AlreadyLoggedInPage name={this.state.name} photoUrl={this.state.photoUrl} signOut={this._signOut} />
+          <AlreadyLoggedInPage name={this.state.name} photoUrl={this.state.photoUrl} />
         ):
         (
           <LoginPage signInFunc={this._signIn} />
         )}   
-        
+        </View>
+        <View style={styles.mainpage}> 
+          <Text>{this.state.name} Logged In</Text>
+          <Image alt="profile pic" url={{uri:this.state.photoUrl}} height="50px" width="50px" />
+        </View>
       </View>
     );
   }
@@ -103,9 +108,9 @@ export default class App extends Component<Props> {
 const AlreadyLoggedInPage = props => {
   return(
     <View>
-      <Text style={styles.header} >{props.name} is Logged In</Text>
+      <Text style={styles.headerText} >{props.name} is Logged In</Text>
       <Image style={styles.profileImage} source={{uri:props.photoUrl}}></Image>
-      <Button title="Sign Out" onPress={props.signOut}></Button>
+      <Button title="Sign Out"></Button>
     </View>
   )
 }
@@ -113,10 +118,10 @@ const AlreadyLoggedInPage = props => {
 const LoginPage = props => {
   return(
     <View>
-      <Text style={styles.header} >Sign In With Google</Text>
+      <Text style={styles.headerStyle} >Sign In With Google</Text>
       <GoogleSigninButton
-          style={styles.signInButton}
-          size={GoogleSigninButton.Size.Wide}
+          style={{ width: 48, height: 48 }}
+          size={GoogleSigninButton.Size.Icon}
           color={GoogleSigninButton.Color.Light}
           onPress={props.signInFunc}
         />
@@ -127,8 +132,19 @@ const LoginPage = props => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex-start',  
     backgroundColor: '#F5FCFF',
+  },
+  header:{
+    flexDirection:'row-reverse',
+    justifyContent:'flex-start',
+  },
+  headerStyle:{
+    fontSize:20,
+    textAlign:'left',
+  },
+  mainpage:{
+    justifyContent:'space-around',
+    alignItems:'center',
   },
   welcome: {
     fontSize: 20,
@@ -140,18 +156,11 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-  signInButton:{
-      flex:1,
-     
-      width: 312, 
-      height: 48, 
-      flex:1,
-  },
   profileImage:{
-    flex:1,
     height:50,
     width:50,
-    
+    alignItems:'center',
+    justifyContent:"center",
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     borderBottomLeftRadius:20,
